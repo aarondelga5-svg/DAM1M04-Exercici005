@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia d'estil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="estils.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">CSS Lab</div>
+        <div class="nav-links">
+            <a href="index.html"><span class="material-symbols-outlined">home</span> Home</a>
+            <a href="galeria.html"><span class="material-symbols-outlined">photo_library</span> Galeria</a>
+            <a href="guia-estil.html" class="active"><span class="material-symbols-outlined">palette</span> Guia d'estil</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Guia d'estil</h1>
+        <p class="subtitle">tipografia, iconografia i paleta de colors</p>
+    </section>
+
+    <section class="fonts-section">
+        <h2>mostrari de fonts</h2>
+
+        <div class="font-sample playfair">
+            <h1>Playfair Display 900</h1>
+            <h2>Playfair Display 700</h2>
+            <h3>Playfair Display 400</h3>
+            <p class="font-meta">font-family: Playfair Display · pesos: 400, 700, 900 · line-height: 1.2 · letter-spacing: -0.02em</p>
+        </div>
+
+        <div class="font-sample inter">
+            <p class="inter-300">Inter weight 300 — text light per descripcions llargues</p>
+            <p class="inter-400">Inter weight 400 — text base per a contingut general</p>
+            <p class="inter-500">Inter weight 500 — medium per a subtitols i botons</p>
+            <p class="inter-600">Inter weight 600 — semibold per a etiquetes i metadades</p>
+            <p class="font-meta">font-family: Inter · pesos: 300, 400, 500, 600 · line-height: 1.6</p>
+        </div>
+
+        <div class="baseline-example">
+            <h3>alineacio baseline icona + text</h3>
+            <div class="baseline-row">
+                <span class="material-symbols-outlined">check_circle</span>
+                <span>text alineat amb la icona en baseline</span>
+            </div>
+            <div class="baseline-row">
+                <span class="material-symbols-outlined">info</span>
+                <span class="inter-600">informacio important</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="type-scale-section">
+        <h2>escala tipografica rem</h2>
+        <div class="type-scale">
+            <div class="scale-row"><span class="scale-size">3rem</span><span class="scale-example" style="font-size:3rem">titol principal</span></div>
+            <div class="scale-row"><span class="scale-size">2.25rem</span><span class="scale-example" style="font-size:2.25rem">titol seccio</span></div>
+            <div class="scale-row"><span class="scale-size">1.5rem</span><span class="scale-example" style="font-size:1.5rem">subtitol</span></div>
+            <div class="scale-row"><span class="scale-size">1.125rem</span><span class="scale-example" style="font-size:1.125rem">text gran (accessibilitat)</span></div>
+            <div class="scale-row"><span class="scale-size">1rem</span><span class="scale-example" style="font-size:1rem">text base — mida minima recomanada</span></div>
+            <div class="scale-row"><span class="scale-size">0.875rem</span><span class="scale-example" style="font-size:0.875rem">text petit (meta, etiquetes)</span></div>
+        </div>
+    </section>
+
+    <section class="icons-section">
+        <h2>material icons</h2>
+        <p class="section-desc">mides, pesos i fill variables</p>
+
+        <div class="icons-showcase">
+            <div class="icon-item">
+                <span class="material-symbols-outlined icon-sm">home</span>
+                <p>opsz 20<br>wght 300</p>
+            </div>
+            <div class="icon-item">
+                <span class="material-symbols-outlined icon-md">home</span>
+                <p>opsz 24<br>wght 400</p>
+            </div>
+            <div class="icon-item">
+                <span class="material-symbols-outlined icon-lg">home</span>
+                <p>opsz 40<br>wght 700</p>
+            </div>
+            <div class="icon-item">
+                <span class="material-symbols-outlined icon-xl icon-fill">home</span>
+                <p>opsz 48<br>FILL 1</p>
+            </div>
+        </div>
+
+        <div class="icon-buttons">
+            <a href="#" class="icon-btn">
+                <span class="material-symbols-outlined">download</span>
+                descarregar
+            </a>
+            <a href="#" class="icon-btn icon-btn-outline">
+                <span class="material-symbols-outlined">share</span>
+                compartir
+            </a>
+            <a href="#" class="icon-btn icon-btn-ghost">
+                <span class="material-symbols-outlined">bookmark</span>
+                guardar
+            </a>
+        </div>
+    </section>
+
+    <section class="colors-section">
+        <h2>paleta de colors</h2>
+        <table class="colors-table">
+            <thead>
+                <tr>
+                    <th>mostra</th>
+                    <th>HEX</th>
+                    <th>RGB</th>
+                    <th>HSL</th>
+                    <th>alpha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><div class="color-swatch" style="background:#1a1a2e"></div></td>
+                    <td>#1a1a2e</td>
+                    <td>rgb(26, 26, 46)</td>
+                    <td>hsl(240, 28%, 14%)</td>
+                    <td>rgba(26, 26, 46, 0.8)</td>
+                </tr>
+                <tr>
+                    <td><div class="color-swatch" style="background:#e94560"></div></td>
+                    <td>#e94560</td>
+                    <td>rgb(233, 69, 96)</td>
+                    <td>hsl(349, 80%, 59%)</td>
+                    <td>rgba(233, 69, 96, 0.8)</td>
+                </tr>
+                <tr>
+                    <td><div class="color-swatch" style="background:#0f3460"></div></td>
+                    <td>#0f3460</td>
+                    <td>rgb(15, 52, 96)</td>
+                    <td>hsl(213, 73%, 22%)</td>
+                    <td>rgba(15, 52, 96, 0.8)</td>
+                </tr>
+                <tr>
+                    <td><div class="color-swatch" style="background:#f5f5f5"></div></td>
+                    <td>#f5f5f5</td>
+                    <td>rgb(245, 245, 245)</td>
+                    <td>hsl(0, 0%, 96%)</td>
+                    <td>rgba(245, 245, 245, 0.8)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

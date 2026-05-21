@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transicions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="estils.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">CSS Lab</div>
+        <div class="nav-links">
+            <a href="index.html" class="active"><span class="material-symbols-outlined">home</span> Home</a>
+            <a href="galeria.html"><span class="material-symbols-outlined">photo_library</span> Galeria</a>
+            <a href="guia-estil.html"><span class="material-symbols-outlined">palette</span> Guia d'estil</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Transicions CSS</h1>
+        <p class="subtitle">explora com els elements canvien suaument d'un estat a un altre</p>
+        <a href="#cards" class="btn-hero">
+            <span class="material-symbols-outlined">arrow_downward</span>
+            veure exemples
+        </a>
+    </section>
+
+    <section class="cards-section" id="cards">
+        <h2>targetes interactives</h2>
+        <p class="section-desc">passa el ratolí per sobre de cada targeta per veure les transicions</p>
+        <div class="cards-row">
+            <div class="card card-linear">
+                <div class="card-img" style="background: #e74c3c"></div>
+                <div class="card-body">
+                    <h3>linear</h3>
+                    <p>velocitat constant de principi a fi</p>
+                    <span class="material-symbols-outlined">speed</span>
+                </div>
+            </div>
+            <div class="card card-ease">
+                <div class="card-img" style="background: #3498db"></div>
+                <div class="card-body">
+                    <h3>ease</h3>
+                    <p>comenca rapid i acaba lent, la mes natural</p>
+                    <span class="material-symbols-outlined">waves</span>
+                </div>
+            </div>
+            <div class="card card-easein">
+                <div class="card-img" style="background: #2ecc71"></div>
+                <div class="card-body">
+                    <h3>ease-in</h3>
+                    <p>comenca lent i acaba rapid</p>
+                    <span class="material-symbols-outlined">rocket_launch</span>
+                </div>
+            </div>
+            <div class="card card-easeout">
+                <div class="card-img" style="background: #9b59b6"></div>
+                <div class="card-body">
+                    <h3>ease-out</h3>
+                    <p>comenca rapid i acaba lent</p>
+                    <span class="material-symbols-outlined">airline_stops</span>
+                </div>
+            </div>
+            <div class="card card-easeinout">
+                <div class="card-img" style="background: #f39c12"></div>
+                <div class="card-body">
+                    <h3>ease-in-out</h3>
+                    <p>lent al principi i al final, rapid al mig</p>
+                    <span class="material-symbols-outlined">swap_horiz</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>menu secundari</h2>
+        <p class="section-desc">cada opcio te transicio de color i letter-spacing</p>
+        <nav class="secondary-menu">
+            <a href="#">disseny</a>
+            <a href="#">tipografia</a>
+            <a href="#">color</a>
+            <a href="#">layout</a>
+            <a href="#">animacio</a>
+        </nav>
+    </section>
+
+</body>
+</html>
